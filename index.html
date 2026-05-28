@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madumitha Murugesan | Full-Stack & AI Developer</title>
+    <meta name="description" content="Portfolio of Madumitha Murugesan, a Full-Stack & AI Developer focused on building intelligent, real-world systems.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bus-crowding-app.vercel.app/">
+    <meta property="og:title" content="Madumitha Murugesan | Full-Stack & AI Developer">
+    <meta property="og:description" content="Explore the portfolio of Madumitha Murugesan, featuring AI-driven products and full-stack solutions.">
+    <meta property="og:image" content="assets/img/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bus-crowding-app.vercel.app/">
+    <meta property="twitter:title" content="Madumitha Murugesan | Full-Stack & AI Developer">
+    <meta property="twitter:description" content="Explore the portfolio of Madumitha Murugesan, featuring AI-driven products and full-stack solutions.">
+    <meta property="twitter:image" content="assets/img/profile.jpeg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- System Preloader / Boot Terminal -->
+    <div id="preloader">
+        <div class="preloader-terminal">
+            <div class="preloader-header">
+                <div class="preloader-dot red"></div>
+                <div class="preloader-dot yellow"></div>
+                <div class="preloader-dot green"></div>
+                <span style="font-size: 0.7rem; color: #475569; margin-left: auto;">SYS_BOOT v1.0.4</span>
+            </div>
+            <div class="preloader-logs" id="preloader-logs">
+                <!-- Lines will be dynamically generated via JS -->
+            </div>
+            <div class="preloader-progress">
+                <div class="preloader-bar" id="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Magnetic Glow Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Header & Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">MM_<span>OS</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">System_Info</a></li>
+                <li><a href="#projects">Missions</a></li>
+                <li><a href="#certifications">Credentials</a></li>
+                <li><a href="#contact">Transmit</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-selector-trigger" id="theme-trigger" aria-label="Select Theme">
+                    <i class="fas fa-palette"></i>
+                </button>
+                <div class="theme-dropdown" id="theme-dropdown">
+                    <button class="theme-option active" data-theme-value="ai"><i class="fas fa-brain"></i> AI Core</button>
+                    <button class="theme-option" data-theme-value="midnight"><i class="fas fa-moon"></i> Midnight</button>
+                    <button class="theme-option" data-theme-value="formula"><i class="fas fa-flag-checkered"></i> Formula</button>
+                    <button class="theme-option" data-theme-value="transit"><i class="fas fa-bus"></i> Transit</button>
+                </div>
+                <a href="https://kutty04.github.io/MY-CV/" class="btn btn-outline" target="_blank" style="padding: 0.45rem 1rem;">CV.exe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Landing Section -->
+    <section id="home" class="hero">
+        <div class="hero-radial-glow"></div>
+        <div class="hero-radial-glow-2"></div>
+        
+        <!-- Live Activity Ticker -->
+        <div class="ticker-bar">
+            <div class="ticker-track" id="ticker-track">
+                <!-- Dynamically populated duplicate contents for infinite scrolling loop -->
+            </div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-system-status reveal">
+                <div class="status-pulse-dot"></div> Session Active // Chennai
+            </div>
+            <div class="reveal">
+                <div class="hero-prompt">~/developer $ init</div>
+                <h1 class="hero-name">
+                    Madumitha Murugesan
+                </h1>
+                <div class="hero-role">> <span class="gradient-text" id="typewriter"></span><span class="hero-cursor"></span></div>
+            </div>
+            <p class="hero-tagline reveal">
+                "I build things I actually need — then make them work for everyone."
+            </p>
+            <div class="hero-btns reveal">
+                <a href="#projects" class="btn btn-primary">Execute Missions <i class="fas fa-terminal"></i></a>
+                <a href="#contact" class="btn btn-outline">Establish Signal</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About & System Diagnostics Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">// System Information</span>
+                <h2 class="section-title">Core Architecture</h2>
+            </div>
+            
+            <div class="about-grid" style="margin-bottom: 5rem;">
+                <div class="about-text reveal">
+                    <p>
+                        I’m a Computer Science Engineering student and <strong>Full-Stack & AI Developer</strong> passionate about engineering practical, intelligent systems that solve real-world problems. I bridge the gap between complex data architectures and intuitive user experiences, focusing on LLM integrations, Retrieval-Augmented Generation (RAG), and data visualization.
+                    </p>
+                    <p>
+                        My engineering philosophy is simple: <strong>I build things I actually need, then make them work for everyone.</strong> Whether it's optimization of public transit data to improve daily commutes in Chennai, or building machine learning telemetry pipelines to analyze Formula 1 races, I am drawn to environments where software directly impacts physical reality.
+                    </p>
+                    <p>
+                        I love diving deep into backend scaling, vector databases (pgvector, MongoDB Atlas), and mobile development with Flutter. I am constantly exploring advanced AI agents, vector context limits, and writing fast, production-grade applications.
+                    </p>
+                </div>
+                
+                <div class="about-avatar-container reveal">
+                    <div class="about-avatar-decor"></div>
+                    <div class="about-avatar-decor-br"></div>
+                    <div class="about-avatar-glow"></div>
+                    <img src="assets/img/profile.jpeg" alt="Madumitha Murugesan" class="about-avatar">
+                </div>
+            </div>
+
+            <!-- Diagnostics Dashboards (Skills & Telemetry Console) -->
+            <div class="diag-grid">
+                <!-- Skills Panel -->
+                <div class="hud-card skills-panel reveal">
+                    <div class="skills-header-row">
+                        <span class="skills-header-title">// system.skills</span>
+                        <span class="skills-header-status">Status: Optimization complete</span>
+                    </div>
+
+                    <!-- Skill 1 -->
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span class="skill-title"><i class="fas fa-brain"></i> LLM / RAG / Vector Search</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill-progress" data-percent="88"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span class="skill-title"><i class="fab fa-react"></i> React / Frontend Architecture</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill-progress" data-percent="92"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span class="skill-title"><i class="fas fa-mobile-alt"></i> Flutter / Mobile Systems</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span class="skill-title"><i class="fab fa-node-js"></i> Node.js / Express</span>
+                            <span class="skill-percentage">87%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill-progress" data-percent="87"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5 -->
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span class="skill-title"><i class="fas fa-database"></i> PostgreSQL / Supabase / MongoDB</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill-progress" data-percent="90"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 6 -->
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span class="skill-title"><i class="fas fa-cubes"></i> Docker / Vercel / Cloud</span>
+                            <span class="skill-percentage">78%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill-progress" data-percent="78"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Telemetry & Terminal Widget -->
+                <div class="stats-panel-wrapper">
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <!-- Stat 1 -->
+                        <div class="hud-card stat-box reveal">
+                            <span class="stat-box-label">Uptime</span>
+                            <span class="stat-box-val" id="system-uptime">00:00:00</span>
+                            <span class="stat-box-indicator"><i class="fas fa-sync fa-spin"></i> Active Session</span>
+                        </div>
+                        <!-- Stat 2 -->
+                        <div class="hud-card stat-box reveal">
+                            <span class="stat-box-label">Missions Deployed</span>
+                            <span class="stat-box-val">06</span>
+                            <span class="stat-box-indicator"><i class="fas fa-check-circle"></i> 100% Production Ready</span>
+                        </div>
+                        <!-- Stat 3 -->
+                        <div class="hud-card stat-box reveal">
+                            <span class="stat-box-label">Bus Stops Indexed</span>
+                            <span class="stat-box-val">74.1k</span>
+                            <span class="stat-box-indicator"><i class="fas fa-bus"></i> Chennai Transit GTFS</span>
+                        </div>
+                        <!-- Stat 4 -->
+                        <div class="hud-card stat-box reveal">
+                            <span class="stat-box-label">Caffeine Intake</span>
+                            <span class="stat-box-val">84%</span>
+                            <span class="stat-box-indicator"><i class="fas fa-coffee"></i> Operational Capacity</span>
+                        </div>
+                    </div>
+
+                    <!-- Mini Console Terminal -->
+                    <div class="console-mini-widget reveal">
+                        <div class="console-top">
+                            <span><i class="fas fa-terminal"></i> system.console</span>
+                            <span>CONNECTED</span>
+                        </div>
+                        <div class="console-body" id="console-body">
+                            <div>MM_OS v1.0.4 Loaded. Ready for direct command.</div>
+                            <div>Type <span style="color: var(--accent-primary); font-weight:600;">help</span> to inspect instructions list.</div>
+                        </div>
+                        <div class="console-input-row">
+                            <span>$</span>
+                            <input type="text" class="console-input" id="console-input" placeholder="Type a command (help, sudo, hire, contact...)" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Missions Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">// Execute Directives</span>
+                <h2 class="section-title">Active Missions</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Smart Bus App -->
+                <div class="hud-card mission-card reveal">
+                    <div class="mission-header">
+                        <span class="mission-id">MISSION_01 // PUBLIC_TRANSIT</span>
+                        <span class="mission-status building">building</span>
+                    </div>
+                    <h3 class="mission-title">Smart Bus App</h3>
+                    <div class="mission-one-liner">Chennai Real-time Transit Intelligence</div>
+                    <p class="mission-impact">
+                        A real-time Chennai transport intelligence platform covering 133 routes and 74,163 bus stops. Solves daily commuter uncertainty by crowd tracking and women's safety reporting.
+                    </p>
+                    
+                    <div class="mission-metrics-block">
+                        <div class="metric-item">
+                            <div class="metric-lbl">Routes Tracked</div>
+                            <div class="metric-val">133</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Bus Stops</div>
+                            <div class="metric-val">74.1k</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Refresh rate</div>
+                            <div class="metric-val">Real-time</div>
+                        </div>
+                    </div>
+
+                    <div class="mission-tags">
+                        <span class="mission-tag">Flutter</span>
+                        <span class="mission-tag">Supabase</span>
+                        <span class="mission-tag">GTFS Data</span>
+                        <span class="mission-tag">WebSockets</span>
+                    </div>
+
+                    <div class="mission-footer">
+                        <div class="mission-actions">
+                            <a href="https://github.com/kutty04/bus-crowding-app.git" class="mission-action-link" target="_blank" title="Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://bus-crowding-app.vercel.app/" class="mission-action-link" target="_blank" title="Live Deployment"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <button class="mission-details-toggle" data-target="details-bus">
+                            <span class="toggle-text">Architecture</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="mission-details-panel" id="details-bus">
+                        <div class="mission-details-subtitle">The Inspiration</div>
+                        <p style="margin-bottom: 0.75rem; font-style: italic; color: var(--accent-primary);">
+                            "I'm a CSE student who takes the bus every day — and got tired of standing at a stop with no idea if the next bus would be packed or empty. So I built one. Chennai Bus Crowding started as a personal frustration and became a full-stack system with 133 routes, 74,163 stops, real-time crowd reporting, and a Flutter app heading to the Play Store. That's the kind of engineer I am — I build things I actually need."
+                        </p>
+                        <div class="mission-details-subtitle">Problem Solved</div>
+                        <p style="margin-bottom: 0.75rem;">Eliminates schedule blindness for Chennai commuters. Provides safety crowd-sourcing alerts in transport vehicles.</p>
+                        <div class="mission-details-subtitle">Technical Architecture</div>
+                        <ul>
+                            <li>GTFS real-time transit schedule integration covering 133 routes and 74,163 stops.</li>
+                            <li>Supabase database backend handling real-time crowdsourcing telemetry logs.</li>
+                            <li>Flutter mobile interface built for low latency.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2: Cerebro RAG -->
+                <div class="hud-card mission-card reveal">
+                    <div class="mission-header">
+                        <span class="mission-id">MISSION_02 // AI_INTELLIGENCE</span>
+                        <span class="mission-status live">live</span>
+                    </div>
+                    <h3 class="mission-title">Cerebro-RAG</h3>
+                    <div class="mission-one-liner">Repository Semantic Context Search</div>
+                    <p class="mission-impact">
+                        AI-powered repository intelligence system for automated code understanding. Performs deep code semantic searching and extracts documentation analysis in seconds.
+                    </p>
+                    
+                    <div class="mission-metrics-block">
+                        <div class="metric-item">
+                            <div class="metric-lbl">Indexing Speed</div>
+                            <div class="metric-val">&lt;3.0s</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">File Limit</div>
+                            <div class="metric-val">1000+</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Recall</div>
+                            <div class="metric-val">99%</div>
+                        </div>
+                    </div>
+
+                    <div class="mission-tags">
+                        <span class="mission-tag">FastAPI</span>
+                        <span class="mission-tag">React</span>
+                        <span class="mission-tag">Supabase Vector</span>
+                        <span class="mission-tag">LangChain</span>
+                    </div>
+
+                    <div class="mission-footer">
+                        <div class="mission-actions">
+                            <a href="https://github.com/kutty04/Cerebro.git" class="mission-action-link" target="_blank" title="Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://cerebro-delta-silk.vercel.app/" class="mission-action-link" target="_blank" title="Live Deployment"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <button class="mission-details-toggle" data-target="details-cerebro">
+                            <span class="toggle-text">Architecture</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="mission-details-panel" id="details-cerebro">
+                        <div class="mission-details-subtitle">Problem Solved</div>
+                        <p style="margin-bottom: 0.75rem;">Allows developers to instantly parse complex, unfamiliar codebases using natural language instead of manual trace indexing.</p>
+                        <div class="mission-details-subtitle">Technical Architecture</div>
+                        <ul>
+                            <li>FastAPI middleware querying Supabase vector extensions (pgvector).</li>
+                            <li>Semantic chunk segmentation using recursive code compilers.</li>
+                            <li>Hugging Face text embeddings & LangChain pipelines.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3: FinanceFlow -->
+                <div class="hud-card mission-card reveal">
+                    <div class="mission-header">
+                        <span class="mission-id">MISSION_03 // DATA_MINING</span>
+                        <span class="mission-status live">live</span>
+                    </div>
+                    <h3 class="mission-title">FinanceFlow</h3>
+                    <div class="mission-one-liner">AI spending Auditor & Pattern Analytics</div>
+                    <p class="mission-impact">
+                        Intelligent financial ledger tracking and spending auditor. Uses machine learning to group spending habits and supplies customized, auto-generated audit feedback.
+                    </p>
+                    
+                    <div class="mission-metrics-block">
+                        <div class="metric-item">
+                            <div class="metric-lbl">Clustering Acc.</div>
+                            <div class="metric-val">94%</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Audit Latency</div>
+                            <div class="metric-val">120ms</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Models Active</div>
+                            <div class="metric-val">K-Means</div>
+                        </div>
+                    </div>
+
+                    <div class="mission-tags">
+                        <span class="mission-tag">React</span>
+                        <span class="mission-tag">Vite</span>
+                        <span class="mission-tag">Supabase DB</span>
+                        <span class="mission-tag">Groq API</span>
+                    </div>
+
+                    <div class="mission-footer">
+                        <div class="mission-actions">
+                            <a href="https://github.com/kutty04/Finance-flow.git" class="mission-action-link" target="_blank" title="Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://finance-flow-ashy-phi.vercel.app/" class="mission-action-link" target="_blank" title="Live Deployment"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <button class="mission-details-toggle" data-target="details-finance">
+                            <span class="toggle-text">Architecture</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="mission-details-panel" id="details-finance">
+                        <div class="mission-details-subtitle">Problem Solved</div>
+                        <p style="margin-bottom: 0.75rem;">Replaces manual transaction tagging with automated clustering, diagnosing specific spending behavior pattern anomalies.</p>
+                        <div class="mission-details-subtitle">Technical Architecture</div>
+                        <ul>
+                            <li>Supabase Auth & Database handling structured transactions.</li>
+                            <li>K-Means statistical model execution.</li>
+                            <li>Auditing queries routed through ultra-low latency Groq models.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 4: DataTalk AI -->
+                <div class="hud-card mission-card reveal">
+                    <div class="mission-header">
+                        <span class="mission-id">MISSION_04 // NATURAL_LANGUAGE</span>
+                        <span class="mission-status live">live</span>
+                    </div>
+                    <h3 class="mission-title">DataTalk AI</h3>
+                    <div class="mission-one-liner">Natural Language SQL Generator</div>
+                    <p class="mission-impact">
+                        AI intelligence bridge enabling non-technical stakeholders to query complex relational data. Converts english statements into valid SQL scripts instantly.
+                    </p>
+                    
+                    <div class="mission-metrics-block">
+                        <div class="metric-item">
+                            <div class="metric-lbl">SQL Gen Acc.</div>
+                            <div class="metric-val">92%</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Dialects</div>
+                            <div class="metric-val">PG/MySQL</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">API latency</div>
+                            <div class="metric-val">&lt;80ms</div>
+                        </div>
+                    </div>
+
+                    <div class="mission-tags">
+                        <span class="mission-tag">Node.js</span>
+                        <span class="mission-tag">PostgreSQL</span>
+                        <span class="mission-tag">Express.js</span>
+                        <span class="mission-tag">NLP Parser</span>
+                    </div>
+
+                    <div class="mission-footer">
+                        <div class="mission-actions">
+                            <a href="https://github.com/kutty04/ipl.git" class="mission-action-link" target="_blank" title="Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://ipl-eight-theta.vercel.app/" class="mission-action-link" target="_blank" title="Live Deployment"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <button class="mission-details-toggle" data-target="details-datatalk">
+                            <span class="toggle-text">Architecture</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="mission-details-panel" id="details-datatalk">
+                        <div class="mission-details-subtitle">Problem Solved</div>
+                        <p style="margin-bottom: 0.75rem;">Allows product teams to analyze operational database registers without waiting for backend engineering support.</p>
+                        <div class="mission-details-subtitle">Technical Architecture</div>
+                        <ul>
+                            <li>Express API routes passing raw questions to optimized context prompts.</li>
+                            <li>PostgreSQL database schema introspection.</li>
+                            <li>Automated syntax validation against custom compiler scripts.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 5: GitHub Wrapped -->
+                <div class="hud-card mission-card reveal">
+                    <div class="mission-header">
+                        <span class="mission-id">MISSION_05 // METRIC_ANALYTICS</span>
+                        <span class="mission-status live">live</span>
+                    </div>
+                    <h3 class="mission-title">GitHub Wrapped</h3>
+                    <div class="mission-one-liner">Developer Commitment Visualization</div>
+                    <p class="mission-impact">
+                        A cinematic metrics engine transforming raw developer repository histories and commitment statistics into beautiful, shareable infographics.
+                    </p>
+                    
+                    <div class="mission-metrics-block">
+                        <div class="metric-item">
+                            <div class="metric-lbl">API Calls</div>
+                            <div class="metric-val">Batch</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Gen Time</div>
+                            <div class="metric-val">&lt;1.8s</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Format</div>
+                            <div class="metric-val">SVG/PNG</div>
+                        </div>
+                    </div>
+
+                    <div class="mission-tags">
+                        <span class="mission-tag">React</span>
+                        <span class="mission-tag">GitHub API</span>
+                        <span class="mission-tag">Vite</span>
+                        <span class="mission-tag">Tailwind</span>
+                    </div>
+
+                    <div class="mission-footer">
+                        <div class="mission-actions">
+                            <a href="https://github.com/kutty04/github-wrapped-2026.git" class="mission-action-link" target="_blank" title="Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://github-wrapped-2026-oyzd.vercel.app/" class="mission-action-link" target="_blank" title="Live Deployment"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <button class="mission-details-toggle" data-target="details-wrapped">
+                            <span class="toggle-text">Architecture</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="mission-details-panel" id="details-wrapped">
+                        <div class="mission-details-subtitle">Problem Solved</div>
+                        <p style="margin-bottom: 0.75rem;">Turns dull commitment logs and charts into visually rich, easily understandable profiles for recruiters.</p>
+                        <div class="mission-details-subtitle">Technical Architecture</div>
+                        <ul>
+                            <li>Direct GitHub REST API ingestion using user authentication keys.</li>
+                            <li>Dynamic SVG layouts rendered inside custom client components.</li>
+                            <li>Statistical distribution calculations of languages and commit activity.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 6: F1 Intelligence -->
+                <div class="hud-card mission-card reveal">
+                    <div class="mission-header">
+                        <span class="mission-id">MISSION_06 // TELEMETRY_ML</span>
+                        <span class="mission-status live">live</span>
+                    </div>
+                    <h3 class="mission-title">F1 Intelligence</h3>
+                    <div class="mission-one-liner">Motorsport Telemetry & Machine Learning Analytics</div>
+                    <p class="mission-impact">
+                        Production-grade Formula 1 analysis dashboard predicting lap speeds, analyzing tire wear, and visualizing pilot dynamics.
+                    </p>
+                    
+                    <div class="mission-metrics-block">
+                        <div class="metric-item">
+                            <div class="metric-lbl">ML Margin</div>
+                            <div class="metric-val">&lt;0.15s</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Telemetry Data</div>
+                            <div class="metric-val">FastF1</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-lbl">Seasons Active</div>
+                            <div class="metric-val">2022-26</div>
+                        </div>
+                    </div>
+
+                    <div class="mission-tags">
+                        <span class="mission-tag">FastAPI</span>
+                        <span class="mission-tag">Scikit-Learn</span>
+                        <span class="mission-tag">Recharts</span>
+                        <span class="mission-tag">Pandas</span>
+                    </div>
+
+                    <div class="mission-footer">
+                        <div class="mission-actions">
+                            <a href="https://github.com/kutty04/F1-intelligence.git" class="mission-action-link" target="_blank" title="Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://f1-intelligence-seven.vercel.app/" class="mission-action-link" target="_blank" title="Live Deployment"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <button class="mission-details-toggle" data-target="details-f1">
+                            <span class="toggle-text">Architecture</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="mission-details-panel" id="details-f1">
+                        <div class="mission-details-subtitle">Problem Solved</div>
+                        <p style="margin-bottom: 0.75rem;">Allows racing fans and statistics modelers to compare telemetry graphs and predict strategies on historical circuits.</p>
+                        <div class="mission-details-subtitle">Technical Architecture</div>
+                        <ul>
+                            <li>FastF1 data pipeline processing telemetry logs in python.</li>
+                            <li>Machine Learning prediction models built via Scikit-Learn.</li>
+                            <li>Recharts React interface showing driver performance charts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">// Academic Credentials</span>
+                <h2 class="section-title">Licenses & Certifications</h2>
+            </div>
+            
+            <div class="cert-grid">
+                <!-- Cert 1 -->
+                <div class="hud-card cert-card reveal">
+                    <div class="cert-top">
+                        <div class="cert-icon-container" style="color: #00ed64;">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <span class="cert-date">Jun 2025</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">MongoDB Certified Developer, Associate (C100DEV)</h3>
+                        <p class="cert-issuer">MongoDB University</p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="https://university.mongodb.com/" target="_blank" class="cert-verify-link">
+                            Verify Credential <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="hud-card cert-card reveal">
+                    <div class="cert-top">
+                        <div class="cert-icon-container" style="color: #a855f7;">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <span class="cert-date">May 2025</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Using Atlas Vector Search for RAG Applications</h3>
+                        <p class="cert-issuer">MongoDB University</p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="https://university.mongodb.com/" target="_blank" class="cert-verify-link">
+                            Verify Credential <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="hud-card cert-card reveal">
+                    <div class="cert-top">
+                        <div class="cert-icon-container" style="color: #ffffff;">
+                            <i class="fab fa-free-code-camp"></i>
+                        </div>
+                        <span class="cert-date">Jul 2025</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Legacy Responsive Web Design V8</h3>
+                        <p class="cert-issuer">freeCodeCamp</p>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="https://www.freecodecamp.org/certification/scarletwitch/responsive-web-design" target="_blank" class="cert-verify-link">
+                            Verify Credential <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Encrypted Transmission Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">// Connect Directives</span>
+                <h2 class="section-title">Establish Signal</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-meta reveal">
+                    <div>
+                        <p class="contact-meta-desc">
+                            Available for <span>internships</span>, <span>placements</span>, and <span>freelance opportunities</span>. Establish direct signal paths to query details or recruit developer.
+                        </p>
+                        
+                        <div class="contact-channels">
+                            <a href="mailto:madumithamurugesan@gmail.com" class="contact-channel-item">
+                                <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="channel-info">
+                                    <h5>Email Link</h5>
+                                    <p>madumithamurugesan@gmail.com</p>
+                                </div>
+                            </a>
+                            <div class="contact-channel-item">
+                                <div class="channel-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="channel-info">
+                                    <h5>Grid Location</h5>
+                                    <p>Chennai, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Career Signal Banner -->
+                    <div class="career-signal-card">
+                        <div class="career-signal-header">
+                            <div class="status-pulse-dot" style="background:#22c55e"></div> // OPPORTUNITY_RADAR
+                        </div>
+                        <div class="career-signal-body">
+                            Currently seeking internships (2025–2026) and full-time placements (2027) in Full-Stack Engineering, AI/ML, or Product Engineering roles. Open to startups, product companies, and research teams solving real problems.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web3Forms Secure Transmit Form -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="hud-card contact-form reveal" id="contact-form">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="ce6ac233-8cc7-4852-8262-bdc1e1cadb39">
+                    
+                    <div class="form-group">
+                        <label for="name" class="form-label">Transmission Source Name</label>
+                        <input type="text" name="name" id="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Return Address Email</label>
+                        <input type="email" name="email" id="email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Encrypted Signal Message</label>
+                        <textarea name="message" id="message" class="form-input" rows="5" placeholder="State your directive..." required></textarea>
+                    </div>
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <button type="submit" class="btn btn-primary" style="justify-content: center; width: 100%;">
+                        Transmit Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/kutty04" class="footer-social-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/madumitha-murugesan-28085339b" class="footer-social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:madumithamurugesan@gmail.com" class="footer-social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-copyright">
+                © 2026 Madumitha Murugesan. Compiled using MM_OS v1.0.4. All systems operational.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
